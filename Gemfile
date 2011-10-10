@@ -31,3 +31,6 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'ruby-debug'
 
+gem 'mongo_mapper'
+gem 'bson_ext'
+gem 'liquid'

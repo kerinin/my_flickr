@@ -1,0 +1,17 @@
+<%= form_for(@photo_set) do |f| %>
+  <% if @photo_set.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@photo_set.errors.count, "error") %> prohibited this photo_set from being saved:</h2>
+
+      <ul>
+      <% @photo_set.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

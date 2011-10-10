@@ -1,0 +1,2 @@
+module ImageTemplatesHelper
+end

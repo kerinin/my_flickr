@@ -1,0 +1,21 @@
+<h1>Listing page_templates</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @page_templates.each do |page_template| %>
+  <tr>
+    <td><%= link_to 'Show', page_template %></td>
+    <td><%= link_to 'Edit', edit_page_template_path(page_template) %></td>
+    <td><%= link_to 'Destroy', page_template, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Page template', new_page_template_path %>

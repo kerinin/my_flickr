@@ -1,4 +1,22 @@
 Flickr::Application.routes.draw do
+  resources :fields
+
+  resources :photo_sets
+
+  resources :pages
+
+  resources :images
+
+  resources :set_templates
+
+  resources :image_templates
+
+  resources :index_templates
+
+  resources :page_templates
+
+  resources :templates
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
