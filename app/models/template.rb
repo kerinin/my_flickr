@@ -1,8 +1,7 @@
 class Template 
   include Mongoid::Document
+  include Mongoid::Timestamps
 
-  field :name, String
-  field :liquid, String
-  
-  timestamps!
+  field :name, :class => String
+  field :liquid, :class => String
 end

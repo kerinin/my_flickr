@@ -1,7 +1,7 @@
 class PageTemplate < Template
+  include Mongoid::Timestamps
+  
   belongs_to :user
   
-  field :keys, Array
-  
-  timestamps!
+  field :keys, :class => Array
 end

@@ -1,5 +1,5 @@
 class ImageTemplate < Template
-  belongs_to :user
+  include Mongoid::Timestamps
   
-  timestamps!
+  belongs_to :user
 end

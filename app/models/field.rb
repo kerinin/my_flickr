@@ -1,6 +1,7 @@
 class Field
   include Mongoid::Document
+  include Mongoid::Timestamps
   
-  field :name, String
-  field :value, String
+  field :name, :class => String
+  field :value, :class => String
 end

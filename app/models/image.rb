@@ -1,9 +1,8 @@
 class Image
   include Mongoid::Document
+  include Mongoid::Timestamps
   
-  field :title, String
-  field :slug, String
-  field :creator_id, Integer
-  
-  timestamps!
+  field :title, :class => String
+  field :slug, :class => String
+  field :creator_id, :class => Integer
 end
