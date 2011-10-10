@@ -1,10 +1,9 @@
 class Image
-  include MongoMapper::EmbeddedDocument
+  include Mongoid::Document
   
-  key :domain, String
-  key :title, String
-  key :slug, String
-  key :creator_id, Integer
+  field :title, String
+  field :slug, String
+  field :creator_id, Integer
   
   timestamps!
 end

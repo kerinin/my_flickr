@@ -1,7 +1,7 @@
 class PageTemplate < Template
-  key :fields
+  belongs_to :user
   
-  many :pages
+  field :keys, Array
   
   timestamps!
 end

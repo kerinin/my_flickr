@@ -1,7 +1,7 @@
 class SetTemplate < Template
-  include MongoMapper::Document
+  include Mongoid::Document
   
-  many :photo_sets
+  belongs_to :user
   
   timestamps!
 end

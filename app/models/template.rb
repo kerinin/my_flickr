@@ -1,9 +1,8 @@
 class Template 
-  include MongoMapper::Document
+  include Mongoid::Document
 
-  key :name, String
-  key :creator_id, Integer
-  key :liquid, String
+  field :name, String
+  field :liquid, String
   
   timestamps!
 end

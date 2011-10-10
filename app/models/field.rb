@@ -1,6 +1,6 @@
 class Field
-  include MongoMapper::EmbeddedDocument
+  include Mongoid::Document
   
-  key :name, String
-  key :value, String
+  field :name, String
+  field :value, String
 end

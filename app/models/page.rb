@@ -1,13 +1,13 @@
 class Page
-  include MongoMapper::Document
+  include Mongoid::Document
   
   belongs_to :page_template
-  many :fields
+  belongs_to :domain
+  embeds_many :fields
   
-  key :domain, String
-  key :title, String
-  key :slug, String
-  key :creator_id, Integer
+  field :title, String
+  field :slug, String
+  field :creator_id, Integer
   
   timestamps!
 end

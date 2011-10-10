@@ -1,4 +1,8 @@
 Flickr::Application.routes.draw do
+  resources :users
+
+  resources :domains
+
   resources :fields
 
   resources :photo_sets

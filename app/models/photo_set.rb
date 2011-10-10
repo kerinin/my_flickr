@@ -1,14 +1,14 @@
 class PhotoSet
-  include MongoMapper::Document
+  include Mongoid::Document
   
   belongs_to :set_template
   belongs_to :image_template
-  many :images
+  belongs_to :domain
+  embeds_many :images
   
-  key :domain, String
-  key :title, String
-  key :slug, String
-  key :creator_id, Integer
+  field :title, String
+  field :slug, String
+  field :creator_id, Integer
   
   timestamps!
 end

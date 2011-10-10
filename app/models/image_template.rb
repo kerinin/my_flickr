@@ -1,5 +1,5 @@
 class ImageTemplate < Template
-  many :images
+  belongs_to :user
   
   timestamps!
 end
