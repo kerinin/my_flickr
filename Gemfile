@@ -36,3 +36,11 @@ gem 'bson_ext'
 gem 'liquid'
 gem 'devise'
 gem 'flickraw'
+
+group :test do
+  gem 'capybara'
+  gem 'cucumber-rails'
+  # database_cleaner is not required, but highly recommended
+  gem 'database_cleaner'
+  gem 'spork'
+end
